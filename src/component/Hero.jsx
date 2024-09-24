@@ -6,7 +6,7 @@ export default function Hero() {
       <Box bg="#495E57">
         <HStack>
             <VStack>
-                <Text>Little Lemon</Text>
+                <Text fontSize={"6xl"}>Little Lemon</Text>
                 <Text>Chicago</Text>
                 <Text>We are a family owned Mediterinean restaurant, focused on traditional recipes served with modern twist.</Text>
             </VStack>
