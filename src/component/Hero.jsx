@@ -1,11 +1,25 @@
-import { Box, HStack, VStack, Text, Flex, Button } from "@chakra-ui/react";
+import {
+  Box,
+  HStack,
+  VStack,
+  Text,
+  Flex,
+  Button,
+  Image,
+} from "@chakra-ui/react";
+import restaurantFood from "../pictures/restauranfood.jpg";
 
 export default function Hero() {
   return (
     <>
-      <Box bg="#495E57" p={10}>
+      <Box bg="#495E57" p={10} height={"370px"}>
         <HStack display={"flex"} justifyContent={"center"}>
-          <Box display={"flex"} justifyContent={"center"}>
+          <Box
+            display={"flex"}
+            justifyContent={"center"}
+            position={"relative"}
+            gap={20}
+          >
             <Flex flexDirection={"column"} alignItems={"flex-start"}>
               <Text
                 fontSize={"6xl"}
@@ -40,6 +54,13 @@ export default function Hero() {
                 Reserve a Table
               </Button>
             </Flex>
+            <Image
+              src={restaurantFood}
+              alt={"restaurant food"}
+              width="320px"
+              height="400px"
+              rounded={10}
+            />
           </Box>
         </HStack>
       </Box>
