@@ -12,7 +12,7 @@ import restaurantFood from "../pictures/restauranfood.jpg";
 export default function Hero() {
   return (
     <>
-      <Box bg="#495E57" p={10} height={"370px"}>
+      <Box bg="#495E57" p={10} height={"370px"} as="section">
         <HStack display={"flex"} justifyContent={"center"}>
           <Box
             display={"flex"}
@@ -22,6 +22,7 @@ export default function Hero() {
           >
             <Flex flexDirection={"column"} alignItems={"flex-start"}>
               <Text
+                as="h1"
                 fontSize={"6xl"}
                 color="#F4CE1C"
                 fontFamily={"Markazi"}
@@ -31,6 +32,7 @@ export default function Hero() {
                 Little Lemon
               </Text>
               <Text
+                as="h2"
                 fontFamily={"Markazi"}
                 color="white"
                 fontSize={"3xl"}
@@ -40,6 +42,7 @@ export default function Hero() {
                 Chicago
               </Text>
               <Text
+                as="p"
                 fontFamily={"Karla"}
                 color="white"
                 fontSize={"xl"}
@@ -50,11 +53,17 @@ export default function Hero() {
                 We are a family owned Mediterinean restaurant, focused on
                 traditional recipes served with modern twist.
               </Text>
-              <Button bg="#F4CE1C" rounded={"5"} fontWeight={"bold"}>
+              <Button
+                as="button"
+                bg="#F4CE1C"
+                rounded={"5"}
+                fontWeight={"bold"}
+              >
                 Reserve a Table
               </Button>
             </Flex>
             <Image
+              as="img"
               src={restaurantFood}
               alt={"restaurant food"}
               width="320px"
