@@ -14,8 +14,8 @@ export default function Hero() {
     <>
       <Box bg="#495E57" p={10} height={"370px"} as="section">
         <HStack display={"flex"} justifyContent={"center"}>
-          <Box
-            display={"flex"}
+          <Flex
+            direction={{base: "column", md: "row"}}
             justifyContent={"center"}
             position={"relative"}
             gap={20}
@@ -69,8 +69,9 @@ export default function Hero() {
               width="320px"
               height="400px"
               rounded={10}
+              order={{base: 2, md: 1}}
             />
-          </Box>
+          </Flex>
         </HStack>
       </Box>
     </>
