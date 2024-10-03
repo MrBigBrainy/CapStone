@@ -19,7 +19,7 @@ export default function Header() {
     <Box p={5} as="header">
       <nav>
         <Flex
-          justify={{ base: "space-between", md: "center" }} 
+          justify={{ base: "space-between", md: "center" }}
           gap={10}
           width="full"
         >
@@ -81,8 +81,7 @@ export default function Header() {
             colorScheme="teal"
           />
         </Flex>
-
-        <Collapse in={isOpen} animateOpacity>
+        <Collapse in={isOpen} animateOpacity duration={5}>
           <VStack
             spacing={4}
             bg="#fff"
