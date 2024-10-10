@@ -2,6 +2,7 @@ import {
   Card,
   CardBody,
   CardHeader,
+  CardFooter,
   Text,
   Heading,
   GridItem,
@@ -14,8 +15,8 @@ import { TbMotorbike } from "react-icons/tb";
 export default function CardBox({headline, price, imageSource, alternateText, detail}) {
   return (
     <GridItem colSpan={2}>
-      <Card borderRadius={"lg"} width={"300px"} mb={10}>
-        <Image src={imageSource} alt={alternateText} />
+      <Card borderRadius={"lg"} width={"300px"} mb={10} height={"510px"}>
+        <Image src={imageSource} alt={alternateText} height={"200px"} borderRadius={"lg"} />
         <CardHeader bg={"#EDEFEE"}>
           <Flex justifyContent={"space-between"}>
             <Heading size="md" fontFamily={"Karla"}>
@@ -31,10 +32,13 @@ export default function CardBox({headline, price, imageSource, alternateText, de
             </Text>
           </Flex>
         </CardHeader>
-        <CardBody bg={"#EDEFEE"} height={"210px"}>
+        <CardBody bg={"#EDEFEE"}>
           <Text textAlign={"left"} color="#333333" fontFamily={"Karla"}>
             {detail}
           </Text>
+        </CardBody>
+
+        <CardFooter bg={"#EDEFEE"}>
           <Flex gap={3}>
             <Text
               fontWeight={"bold"}
@@ -42,12 +46,13 @@ export default function CardBox({headline, price, imageSource, alternateText, de
               mt={5}
               fontSize={"lg"}
               textAlign={"left"}
+              alignSelf={"flex-end"}
             >
               Order Delivery
             </Text>
             <Icon as={TbMotorbike} boxSize={5} alignSelf={"flex-end"} mb={1} />
           </Flex>
-        </CardBody>
+        </CardFooter>
       </Card>
     </GridItem>
   );

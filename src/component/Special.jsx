@@ -2,6 +2,7 @@ import { Flex, Text, Box, Button, Grid } from "@chakra-ui/react";
 import CardBox from "./CardBox";
 import greekSaladImage from "../pictures/greekSalad.jpg";
 import bruchetta from "../pictures/bruchetta.svg";
+import lemonDessert from "../pictures/lemonDessert.jpg";
 export default function Special () {
     return (
       <>
@@ -33,7 +34,6 @@ export default function Special () {
             imageSource={greekSaladImage}
             alternateText="Greek Salad"
             detail="The famous greek salad of crispy lettuce, peppers, olives, and our Chicago style feta cheese, garnished with crunchy garlic and rosementary croustons"
-          
           />
           <CardBox
             headline="Bruchetta"
@@ -41,7 +41,13 @@ export default function Special () {
             imageSource={bruchetta}
             alternateText="Bruchetta"
             detail="Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. "
-           
+          />
+          <CardBox
+            headline="Lemon Dessert"
+            price="$5.00"
+            imageSource={lemonDessert}
+            alternateText="Lemon Dessert"
+            detail="This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
           />
         </Grid>
       </>
