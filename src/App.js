@@ -4,6 +4,7 @@ import { ChakraProvider, Grid, GridItem } from "@chakra-ui/react";
 import Header from "./component/Header.jsx";
 import Hero from './component/Hero.jsx';
 import Special from './component/Special.jsx';
+import Testimonial from './component/Testimonial.jsx';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           </GridItem>
           <GridItem colStart={4} colEnd={10}>
             <Special />
+          </GridItem>
+          <GridItem colStart={4} colEnd={10}>
+            <Testimonial />
           </GridItem>
         </Grid>
       </div>
