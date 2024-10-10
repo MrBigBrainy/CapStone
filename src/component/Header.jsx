@@ -16,12 +16,13 @@ export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box p={5} as="header">
+    <Box  as="header">
       <nav>
         <Flex
-          justify={{ base: "space-between", md: "center" }}
+          justify={{ base: "space-around", md: "flex-start" }}
           gap={10}
           width="full"
+          pt={5}
         >
           <Image src={logo} alt="Logo" />
 
