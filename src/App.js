@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { ChakraProvider, Grid, GridItem } from "@chakra-ui/react";
 import Header from "./component/Header.jsx";
@@ -10,13 +10,13 @@ function App() {
     <ChakraProvider>
       <div className="App">
         <Grid templateColumns="repeat(12, 1fr)" gap={6}>
-          <GridItem colStart={4} colEnd={11}>
+          <GridItem colStart={4} colEnd={10}>
             <Header />
           </GridItem>
-          <GridItem colStart={1} colEnd={13}>
+          <GridItem colStart={1} colEnd={13} backgroundColor={"#495E57"}>
             <Hero />
           </GridItem>
-          <GridItem colStart={2} colEnd={11}>
+          <GridItem colStart={4} colEnd={10}>
             <Special />
           </GridItem>
         </Grid>
