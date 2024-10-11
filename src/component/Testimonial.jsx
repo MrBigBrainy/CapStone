@@ -8,6 +8,7 @@ export default function Testimonial() {
         fontSize={"5xl"}
         fontFamily={"Markazi"}
         fontWeight={"semibold"}
+        mt={"100px"}
         mb={"20px"}
       >
         Testimonials

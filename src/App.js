@@ -5,6 +5,7 @@ import Header from "./component/Header.jsx";
 import Hero from './component/Hero.jsx';
 import Special from './component/Special.jsx';
 import Testimonial from './component/Testimonial.jsx';
+import AboutUs from "./component/AboutUs.jsx";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           </GridItem>
           <GridItem colStart={4} colEnd={10}>
             <Testimonial />
+          </GridItem>
+          <GridItem colStart={4} colEnd={10}>
+            <AboutUs />
           </GridItem>
         </Grid>
       </div>
