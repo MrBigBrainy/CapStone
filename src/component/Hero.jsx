@@ -24,7 +24,7 @@ export default function Hero() {
         <GridItem
           colStart={{ base: 2, md: 1, lg:3, xl: 4 }}
           colEnd={{ base: 8, md: 8, lg: 11,xl: 11, "2xl": 10 }}
-          ml={{md: "50px"}}
+          ml={{sm: "0px", md: "50px", lg: "0px"}}
         >
           <Box bg="#495E57" pt={10} pb={10} height={"370px"} as="section">
             <HStack display={"flex"} justifyContent={"space-between"}>

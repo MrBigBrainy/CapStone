@@ -23,6 +23,7 @@ export default function Header() {
           gap={10}
           width="full"
           pt={5}
+          ml={{ sm: "0px", md: "50px", lg: "0px" }}
         >
           <Image src={logo} alt="Logo" />
 
