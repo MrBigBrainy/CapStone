@@ -6,6 +6,7 @@ import Hero from './component/Hero.jsx';
 import Special from './component/Special.jsx';
 import Testimonial from './component/Testimonial.jsx';
 import AboutUs from "./component/AboutUs.jsx";
+import Footer from './component/Footer.jsx';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           </GridItem>
           <GridItem colStart={4} colEnd={10}>
             <AboutUs />
+          </GridItem>
+          <GridItem colStart={1} colEnd={13} backgroundColor={"#495E57"}>
+            <Footer />
           </GridItem>
         </Grid>
       </div>

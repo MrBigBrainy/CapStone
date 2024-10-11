@@ -4,7 +4,7 @@ import chefB from "../pictures/chefB.jpg";
 export default function AboutUs() {
   return (
     <>
-      <Flex pt={10} pb={10} gap={"10px"} mt={"150px"} position={"relative"}>
+      <Flex pt={10} pb={10} gap={"10px"} mt={"150px"} position={"relative"} mb={"100px"}>
         <Flex flexDirection={"column"} alignItems={"flex-start"} flex={1}>
           <Text
             as="h2"
