@@ -10,17 +10,18 @@ import {
   Image,
   Icon,
   Box,
+  Center,
 } from "@chakra-ui/react";
 import { TbMotorbike } from "react-icons/tb";
 export default function CardBox({headline, price, imageSource, alternateText, detail}) {
   return (
-    <GridItem colSpan={{ base: 3, sm: 2, md: 2 }}>
+    <GridItem colSpan={{ base: 3, sm: 3, md: 2 }} colStart={{sm: 2}} justifyContent={"center"}>
       <Card
         borderRadius={"lg"}
-        width={"300px"}
+        width={{base: "300px", md: "100%"}}
         mb={10}
         height={"510px"}
-        direction={{ base: "column", sm: "column", md: "row" }}
+        direction={{ base: "column", sm: "column", md: "row", lg: 'column' }}
         ml={{ sm: "0px", md: "50px", lg: "0px" }}
       >
         <Image

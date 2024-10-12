@@ -28,7 +28,7 @@ export default function Special () {
             </Button>
           </Box>
         </Flex>
-        <Grid templateColumns={{base: "repeat(2,1fr)", lg:"repeat(6, 1fr)"}}>
+        <Grid templateColumns={{base: "repeat(0,1fr)", lg:"repeat(6, 1fr)"}}>
           <CardBox
             headline="Greek Salad"
             price="$12.99"
