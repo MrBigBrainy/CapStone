@@ -14,9 +14,21 @@ import {
 import { TbMotorbike } from "react-icons/tb";
 export default function CardBox({headline, price, imageSource, alternateText, detail}) {
   return (
-    <GridItem colSpan={2}>
-      <Card borderRadius={"lg"} width={"300px"} mb={10} height={"510px"}>
-        <Image src={imageSource} alt={alternateText} height={"200px"} borderRadius={"lg"} />
+    <GridItem colSpan={{ base: 3, sm: 2, md: 2 }}>
+      <Card
+        borderRadius={"lg"}
+        width={"300px"}
+        mb={10}
+        height={"510px"}
+        direction={{ base: "column", sm: "column", md: "row" }}
+        ml={{ sm: "0px", md: "50px", lg: "0px" }}
+      >
+        <Image
+          src={imageSource}
+          alt={alternateText}
+          height={"200px"}
+          borderRadius={"lg"}
+        />
         <CardHeader bg={"#EDEFEE"}>
           <Flex justifyContent={"space-between"}>
             <Heading size="md" fontFamily={"Karla"}>

@@ -12,22 +12,23 @@ export default function Special () {
           pb={10}
           mt={100}
           justifyContent={"space-between"}
+          ml={{ sm: "0px", md: "50px", lg: "0px" }}
         >
           <Text
             as={"h2"}
-            fontSize={"5xl"}
+            fontSize={{base: "3xl", sm: "5xl", md:"5xl"}}
             fontFamily={"Markazi"}
             fontWeight={"semibold"}
           >
             This Weeks Specials!
           </Text>
           <Box mt={4}>
-            <Button as="button" bg="#F4CE1C" rounded={"5"} fontWeight={"bold"}>
+            <Button as="button" bg="#F4CE1C" rounded={"5"} fontWeight={"bold"} display={{base: "none", md: "flex"}}>
               Online Menu
             </Button>
           </Box>
         </Flex>
-        <Grid templateColumns="repeat(6, 1fr)">
+        <Grid templateColumns={{base: "repeat(2,1fr)", lg:"repeat(6, 1fr)"}}>
           <CardBox
             headline="Greek Salad"
             price="$12.99"
