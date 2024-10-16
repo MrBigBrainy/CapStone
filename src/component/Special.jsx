@@ -28,7 +28,7 @@ export default function Special () {
             </Button>
           </Box>
         </Flex>
-        <Grid templateColumns={{base: "repeat(0,1fr)", lg:"repeat(6, 1fr)"}}>
+        <Grid templateColumns={{base: "repeat(0,1fr)", lg:"repeat(0, 1fr)", xl:"repeat(6, 1fr)"}}>
           <CardBox
             headline="Greek Salad"
             price="$12.99"
@@ -36,7 +36,14 @@ export default function Special () {
             alternateText="Greek Salad"
             detail="The famous greek salad of crispy lettuce, peppers, olives, and our Chicago style feta cheese, garnished with crunchy garlic and rosementary croustons"
           />
-          <CardBox
+          
+        </Grid>
+      </>
+    );
+}
+
+/*
+<CardBox
             headline="Bruchetta"
             price="$5.99"
             imageSource={bruchetta}
@@ -50,7 +57,4 @@ export default function Special () {
             alternateText="Lemon Dessert"
             detail="This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
           />
-        </Grid>
-      </>
-    );
-}
+          */
