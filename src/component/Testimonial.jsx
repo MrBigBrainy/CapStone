@@ -13,7 +13,11 @@ export default function Testimonial() {
       >
         Testimonials
       </Text>
-      <Grid templateColumns="repeat(6, 1fr)" gap={"15px"}>
+      <Grid
+        templateColumns="repeat(6, 1fr)"
+        gap={"15px"}
+        ml={{ sm: "0px", md: "50px", lg: "0px" }}
+      >
         <Review name={"Jonathan Burger"} review={"This is INSANE!!!"} />
         <Review
           name={"Anchari Junjareon"}

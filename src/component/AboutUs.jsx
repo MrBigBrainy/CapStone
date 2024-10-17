@@ -1,14 +1,23 @@
-import { Flex, Text, Image } from "@chakra-ui/react";
+import { Flex, Text, Image, Box} from "@chakra-ui/react";
 import chefA from "../pictures/chefA.jpg";
 import chefB from "../pictures/chefB.jpg";
 export default function AboutUs() {
   return (
     <>
-      <Flex pt={10} pb={10} gap={"10px"} mt={"150px"} position={"relative"} mb={"100px"}>
+      <Flex
+        pt={10}
+        pb={10}
+        gap={{ base: "30px", xl: "10px", lg: "30px" }}
+        mt={{ base: "50px", xl: "150px" }}
+        mb={"100px"}
+        flexDirection={{ base: "column", xl: "row", "2xl": "row" }}
+        position={"relative"}
+        ml={{ sm: "0px", md: "50px", lg: "0px" }}
+      >
         <Flex flexDirection={"column"} alignItems={"flex-start"} flex={1}>
           <Text
             as="h2"
-            fontSize={"5xl"}
+            fontSize={{base: "5xl", xl:"45x"}}
             fontWeight={"semibold"}
             fontFamily={"Markazi"}
             color={"#495E57"}
@@ -19,7 +28,7 @@ export default function AboutUs() {
             as="h3"
             fontWeight={"medium"}
             fontFamily={"Markazi"}
-            fontSize={"4xl"}
+            fontSize={{base: "4xl", xl: "2xl"}}
             textAlign={"left"}
             mb={"20px"}
             color={"#495E57"}
@@ -40,7 +49,7 @@ export default function AboutUs() {
 
         <Image
           src={chefA}
-          height={"300px"}
+          height={{base: "100%",xl:"300px"}}
           flex={2}
           objectFit={"contain"}
           alignSelf={"center"}
@@ -52,6 +61,7 @@ export default function AboutUs() {
           objectFit={"contain"}
           position={"absolute"}
           right={0}
+          display={{ base: "none", lg: "none", xl: "block" }}
         />
       </Flex>
     </>

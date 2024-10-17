@@ -42,21 +42,21 @@ export default function CardBox({
             lg: "row",
             xl: "column",
           }}
-          height="100%" // Ensure Flex takes full height
+          height="100%" 
         >
           <Image
             src={imageSource}
             alt={alternateText}
             borderRadius={"lg"}
             objectFit="cover"
-            height={{ md: "265px", xl: "175px" }} // Set height to 100%
-            width={{ md: "290px", xl: "100%" }} // Adjust as needed
+            height={{ md: "265px", xl: "175px" }} 
+            width={{ md: "290px", xl: "100%" }} 
           />
           <Box
             flex="1"
             display={{ md: "flex" }}
             flexDirection={{ md: "column" }}
-            height={{ md: "265px", xl: "100%" }} // Ensure Box takes full height
+            height={{ md: "265px", xl: "100%" }} 
             
           >
             <CardHeader bg={"#EDEFEE"}>
@@ -80,7 +80,7 @@ export default function CardBox({
               </Text>
             </CardBody>
 
-            <CardFooter bg={"#EDEFEE"}>
+            <CardFooter bg={"#EDEFEE"} paddingBottom={"10px"}>
               <Flex gap={3}>
                 <Text
                   fontWeight={"bold"}

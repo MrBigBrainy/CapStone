@@ -33,8 +33,30 @@ function App() {
           >
             <Hero />
           </GridItem>
-          <GridItem colStart={{ base: 2, md: 1, lg: 3, xl: 4 }} colEnd={{ base: 8, sm: 6, md: 8, lg: 11, xl: 11, "2xl": 10 }}>
+          <GridItem
+            colStart={{ base: 2, md: 1, lg: 3, xl: 4 }}
+            colEnd={{ base: 8, sm: 6, md: 8, lg: 11, xl: 11, "2xl": 10 }}
+          >
             <Special />
+          </GridItem>
+          <GridItem
+            colStart={{ base: 2, md: 1, lg: 3, xl: 4 }}
+            colEnd={{ base: 8, sm: 6, md: 8, lg: 11, xl: 11, "2xl": 10 }}
+          >
+            <Testimonial />
+          </GridItem>
+          <GridItem
+            colStart={{ base: 2, md: 1, lg: 3, xl: 4 }}
+            colEnd={{ base: 8, sm: 6, md: 8, lg: 11, xl: 11, "2xl": 10 }}
+          >
+            <AboutUs />
+          </GridItem>
+          <GridItem
+            colStart={{ base: 1 }}
+            colEnd={{ base: 7, md: 9, lg: 13 }}
+            backgroundColor={"#495E57"}
+          >
+            <Footer />
           </GridItem>
         </Grid>
       </div>
@@ -43,15 +65,3 @@ function App() {
 }
 
 export default App;
-/*
-
-          <GridItem colStart={4} colEnd={10}>
-            <Testimonial />
-          </GridItem>
-          <GridItem colStart={4} colEnd={10}>
-            <AboutUs />
-          </GridItem>
-          <GridItem colStart={1} colEnd={13} backgroundColor={"#495E57"}>
-            <Footer />
-          </GridItem>
-          */

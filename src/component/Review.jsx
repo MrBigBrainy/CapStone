@@ -16,7 +16,7 @@ import {
 export default function Review({name, review}) {
   return (
     <>
-      <GridItem colSpan={2} mb={"30px"}>
+      <GridItem colSpan={{base: 6, xl:"2","2xl": 2}} mb={"30px"}>
         <Card>
           <CardBody>
             <Flex justifyContent={"flex-start"}>
