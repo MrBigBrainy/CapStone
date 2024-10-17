@@ -16,19 +16,32 @@ export default function Special () {
         >
           <Text
             as={"h2"}
-            fontSize={{base: "3xl", sm: "5xl", md:"5xl"}}
+            fontSize={{ base: "3xl", sm: "5xl", md: "5xl" }}
             fontFamily={"Markazi"}
             fontWeight={"semibold"}
           >
             This Weeks Specials!
           </Text>
           <Box mt={4}>
-            <Button as="button" bg="#F4CE1C" rounded={"5"} fontWeight={"bold"} display={{base: "none", md: "flex"}}>
+            <Button
+              as="button"
+              bg="#F4CE1C"
+              rounded={"5"}
+              fontWeight={"bold"}
+              display={{ base: "none", md: "flex" }}
+            >
               Online Menu
             </Button>
           </Box>
         </Flex>
-        <Grid templateColumns={{base: "repeat(0,1fr)", lg:"repeat(0, 1fr)", xl:"repeat(6, 1fr)"}}>
+        <Grid
+          templateColumns={{
+            base: "repeat(0,1fr)",
+            lg: "repeat(0, 1fr)",
+            xl: "repeat(6, 1fr)",
+          }}
+          gap={"20px"}
+        >
           <CardBox
             headline="Greek Salad"
             price="$12.99"
@@ -36,14 +49,7 @@ export default function Special () {
             alternateText="Greek Salad"
             detail="The famous greek salad of crispy lettuce, peppers, olives, and our Chicago style feta cheese, garnished with crunchy garlic and rosementary croustons"
           />
-          
-        </Grid>
-      </>
-    );
-}
-
-/*
-<CardBox
+          <CardBox
             headline="Bruchetta"
             price="$5.99"
             imageSource={bruchetta}
@@ -57,4 +63,8 @@ export default function Special () {
             alternateText="Lemon Dessert"
             detail="This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
           />
-          */
+        </Grid>
+      </>
+    );
+}
+

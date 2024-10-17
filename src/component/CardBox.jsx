@@ -10,10 +10,16 @@ import {
   Image,
   Icon,
   Box,
-  Center,
 } from "@chakra-ui/react";
 import { TbMotorbike } from "react-icons/tb";
-export default function CardBox({headline, price, imageSource, alternateText, detail}) {
+
+export default function CardBox({
+  headline,
+  price,
+  imageSource,
+  alternateText,
+  detail,
+}) {
   return (
     <GridItem
       colSpan={{ base: 3, sm: 3, md: 2 }}
@@ -24,20 +30,35 @@ export default function CardBox({headline, price, imageSource, alternateText, de
         borderRadius={"lg"}
         width={{ base: "300px", md: "100%" }}
         mb={10}
-        height={{ xl: "510px" }}
+        height={{ xl: "550px" }}
         ml={{ sm: "0px", md: "50px", lg: "0px" }}
         className="Test2154854"
       >
-        <Flex flexDirection={{ base: "column", sm: "column", md: "row", lg: "row", xl: "column" }} >
+        <Flex
+          flexDirection={{
+            base: "column",
+            sm: "column",
+            md: "row",
+            lg: "row",
+            xl: "column",
+          }}
+          height="100%" // Ensure Flex takes full height
+        >
           <Image
             src={imageSource}
             alt={alternateText}
             borderRadius={"lg"}
             objectFit="cover"
-            height={{md: "280px"}}
-            width={{md: "290px"}}
+            height={{ md: "265px", xl: "175px" }} // Set height to 100%
+            width={{ md: "290px", xl: "100%" }} // Adjust as needed
           />
-          <Box height={{md: "280px", lg: "100%"}} width={{lg: "100%"}} flex="1" display={{md: "flex"}} flexDirection={{md: "column"}} className="Test">
+          <Box
+            flex="1"
+            display={{ md: "flex" }}
+            flexDirection={{ md: "column" }}
+            height={{ md: "265px", xl: "100%" }} // Ensure Box takes full height
+            
+          >
             <CardHeader bg={"#EDEFEE"}>
               <Flex justifyContent={"space-between"}>
                 <Heading size="md" fontFamily={"Karla"}>
