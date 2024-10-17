@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function BookingForm () {
     const [formData, setFormData] = useState({
         date: '',
-         time: '17:00',
+        time: '17:00',
         numberOfGuests: '1',
         occasion: 'Birthday',
     })
@@ -51,9 +51,21 @@ export default function BookingForm () {
               <option>22:00</option>
             </Select>
             <FormLabel htmlFor="guests">Number of guests</FormLabel>
-            <Input type="number" placeholder="1" min="1" max="10" id="guests" />
+            <Input
+              type="number"
+              placeholder="1"
+              min="1"
+              max="10"
+              id="guests"
+              onChange={(event) => handleChange(event, "numberOfGuests")}
+              value={formData.numberOfGuests}
+            />
             <FormLabel htmlFor="occasion">Occasion</FormLabel>
-            <Select id="occasion">
+            <Select
+              id="occasion"
+              onChange={(event) => handleChange(event, "occasion")}
+              value={formData.occasion}
+            >
               <option>Birthday</option>
               <option>Anniversary</option>
             </Select>
