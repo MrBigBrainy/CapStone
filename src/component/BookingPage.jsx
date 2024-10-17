@@ -1,4 +1,5 @@
 import { Grid, GridItem } from "@chakra-ui/react";
+import BookingForm from "./BookingForm";
 export default function BookingPage() {
   return (
     <>
@@ -6,7 +7,7 @@ export default function BookingPage() {
         colStart={{ base: 2, md: 1, lg: 3, xl: 4 }}
         colEnd={{ base: 8, sm: 6, md: 8, lg: 11, xl: 11, "2xl": 10 }}
       >
-        <h1>Hello World</h1>
+       <BookingForm />
       </GridItem>
     </>
   );
