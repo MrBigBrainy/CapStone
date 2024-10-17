@@ -4,8 +4,8 @@ export default function BookingForm () {
     const [formData, setFormData] = useState({
         date: '',
          time: '17:00',
-        numberOfGuests: '',
-        occasion: '',
+        numberOfGuests: '1',
+        occasion: 'Birthday',
     })
     function handleSubmit (event) {
         event.preventDefault();
