@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function BookingForm () {
     const [formData, setFormData] = useState({
         date: '',
-         time: '',
+         time: '17:00',
         numberOfGuests: '',
         occasion: '',
     })
@@ -14,10 +14,14 @@ export default function BookingForm () {
 
     function handleChange(event, objectName){
         const {value} = event.target;
-        setFormData((prevState)=> ({
-            ...prevState,
-            [objectName]: value,
-        })) 
+        setFormData((prevState)=> {
+            const newState = {
+              ...prevState,
+              [objectName]: value,
+            };
+            console.log(newState);
+            return newState;
+        })
     }
     return (
       <>
@@ -27,9 +31,18 @@ export default function BookingForm () {
             style={{ display: "grid", maxWidth: "200px", gap: "20px" }}
           >
             <FormLabel htmlFor="res-date"> Choose Date </FormLabel>
-            <Input type="date" id="res-date" onChange={(event) => handleChange(event, "date")} />
+            <Input
+              type="date"
+              id="res-date"
+              onChange={(event) => handleChange(event, "date")}
+              value={formData.date}
+            />
             <FormLabel htmlFor="res-time">Choose time</FormLabel>
-            <Select id="res-time ">
+            <Select
+              id="res-time"
+              onChange={(event) => handleChange(event, "time")}
+              value={formData.time}
+            >
               <option>17:00</option>
               <option>18:00</option>
               <option>19:00</option>
