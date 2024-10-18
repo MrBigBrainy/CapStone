@@ -9,7 +9,7 @@ export default function BookingForm({ availableTime, updateTime }) {
   });
   function handleSubmit(event) {
     event.preventDefault();
-    console.log("Submitted");
+    console.log(formData);
     updateTime(formData.time);
     setFormData((prevState)=> ({
       ...prevState,
@@ -34,6 +34,7 @@ export default function BookingForm({ availableTime, updateTime }) {
         <FormControl
           m={10}
           style={{ display: "grid", maxWidth: "200px", gap: "20px" }}
+          isRequired
         >
           <FormLabel htmlFor="res-date"> Choose Date </FormLabel>
           <Input
@@ -41,6 +42,7 @@ export default function BookingForm({ availableTime, updateTime }) {
             id="res-date"
             onChange={(event) => handleChange(event, "date")}
             value={formData.date}
+            required
           />
           <FormLabel htmlFor="res-time">Choose time</FormLabel>
           <Select
