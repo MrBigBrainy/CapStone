@@ -3,13 +3,18 @@ import { useState } from "react";
 export default function BookingForm({ availableTime, updateTime }) {
   const [formData, setFormData] = useState({
     date: "",
-    time: "17:00",
+    time: "",
     numberOfGuests: "1",
     occasion: "Birthday",
   });
   function handleSubmit(event) {
     event.preventDefault();
     console.log("Submitted");
+    updateTime(formData.time);
+    setFormData((prevState)=> ({
+      ...prevState,
+      time: availableTime[0]
+    }))
   }
 
   function handleChange(event, objectName) {
@@ -43,12 +48,10 @@ export default function BookingForm({ availableTime, updateTime }) {
             onChange={(event) => handleChange(event, "time")}
             value={formData.time}
           >
-            <option>17:00</option>
-            <option>18:00</option>
-            <option>19:00</option>
-            <option>20:00</option>
-            <option>21:00</option>
-            <option>22:00</option>
+            {availableTime.map((time, index) => (
+              <option key={index} value={time}>{time}</option>
+            ))}
+            
           </Select>
           <FormLabel htmlFor="guests">Number of guests</FormLabel>
           <Input

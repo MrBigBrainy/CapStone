@@ -6,7 +6,7 @@ export default function BookingPage() {
   function timeReducer(state, action) {
     if(action.type === "UPDATE_TIME") {
       const newState = [...state];
-      return newState.filter((time) => time !== action.reserveTime);
+      return newState.filter((time) => time !== action.selectTime);
     }
   }
 
@@ -18,6 +18,7 @@ export default function BookingPage() {
       selectTime
     })
   }
+  
   return (
     <>
       <GridItem
