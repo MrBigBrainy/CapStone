@@ -47,7 +47,7 @@ export default function Header() {
               Menu
             </Link>
             <Link
-              href="#"
+              href="booking"
               fontFamily="Karla, sans-serif"
               fontSize="lg"
               fontWeight={"bold"}
